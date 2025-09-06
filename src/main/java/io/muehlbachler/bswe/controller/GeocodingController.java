@@ -31,6 +31,11 @@ public class GeocodingController {
   @Autowired
   private final GeocodingService geocodingService;
 
+  /**
+   * Determines coordinates based on location
+   * 
+   * @return New RepsonseEntity
+   */
   @GetMapping("/")
   public ResponseEntity<Coordinates> fetch(@RequestParam String location) {
     final Coordinates coordinates = geocodingService.fetchCoordinates(location);

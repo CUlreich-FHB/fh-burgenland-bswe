@@ -28,6 +28,13 @@ public class UserController {
   @Autowired
   private final UserService userService;
 
+  /**
+   * Creates a new ResponseEntity
+   *
+   * @param userDto. A UserCreateDTO object containing data
+   * 
+   * @return new ResponseEntity of type User based on the arguments
+   */
   @PostMapping("/")
   public ResponseEntity<User> create(@RequestBody final UserCreateDto userDto) {
     if (userDto == null) {
