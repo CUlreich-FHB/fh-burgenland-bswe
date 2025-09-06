@@ -33,6 +33,8 @@ public class GeocodingController {
 
   /**
    * Determines coordinates based on location
+   *
+   * @param location The coordinates of the given location as a String
    * 
    * @return New RepsonseEntity
    */
