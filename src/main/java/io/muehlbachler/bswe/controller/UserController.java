@@ -31,7 +31,7 @@ public class UserController {
   /**
    * Creates a new ResponseEntity
    *
-   * @param userDto. A UserCreateDTO object containing data
+   * @param userDto A UserCreateDTO object containing data.
    * 
    * @return new ResponseEntity of type User based on the arguments
    */
